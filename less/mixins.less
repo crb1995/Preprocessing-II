@@ -1,1 +1,17 @@
 // Mixins in here
+
+// "content-pick" buttons
+.button-style(@padding, @back-color, @b-radius){
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  width: 85%;
+  padding: @padding;
+  background: @back-color;
+  border-radius: @b-radius;
+
+  @media(max-width: 550px){
+    font-size: 1.5rem;
+  }
+}

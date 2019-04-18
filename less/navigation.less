@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+.nav-sec {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 25px 0;
+  width: 100%;
+
+  nav {
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .navbar {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 800px){
+        width: 50%;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        padding-right: 5px;
+
+        @media (max-width: 600px){
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          color: @sandy-beach;
+        }
+      }
+    }
+  }
+}
